@@ -6,6 +6,7 @@ public class PaymentApproved extends AbstractEvent {
     private Long rsvId;
     private Long roomId;
     private String status;
+    private Long carId;
 
     public PaymentApproved(){
         super();
@@ -40,5 +41,13 @@ public class PaymentApproved extends AbstractEvent {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Long getCarId() {
+        return carId;
+    }
+
+    public void setCarId(Long carId) {
+        this.carId = carId;
     }
 }

@@ -13,6 +13,7 @@ public class Payment {
     private Long rsvId;
     private Long roomId;
     private String status;
+    private Long carId;
 
     @PostPersist
     public void onPostPersist(){
@@ -71,6 +72,14 @@ public class Payment {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Long getCarId() {
+        return carId;
+    }
+
+    public void setCarId(Long carId) {
+        this.carId = carId;
     }
 
 
